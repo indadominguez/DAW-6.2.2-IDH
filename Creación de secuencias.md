@@ -15,12 +15,12 @@ Tarjeta (Entidad que representa la tarjeta del usuario).
 Cuenta (Entidad que representa la cuenta bancaria asociada).
 
 ## Diagrama de Secuencias Básico
-@startuml,
-actor Usuario,
-boundary Interfaz_Cajero,
-control Control_Validacion,
-control Control_Transaccion,
-entity Tarjeta,
+@startuml
+actor Usuario
+boundary Interfaz_Cajero
+control Control_Validacion
+control Control_Transaccion
+entity Tarjeta
 entity Cuenta
 
 Usuario -> Interfaz_Cajero: Insertar Tarjeta
