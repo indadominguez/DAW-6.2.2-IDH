@@ -117,3 +117,4 @@ end
 Interfaz_Cajero -> Usuario: Retirar Tarjeta
 @enduml
 ```
+![image](https://github.com/user-attachments/assets/f2385401-2705-45cc-aeb4-cd48010494b8)
