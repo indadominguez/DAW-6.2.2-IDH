@@ -31,3 +31,8 @@ b) Interpretación del diagrama
 
 c) Responde a la pregunta: ¿De que manera te ayuda un diagrama de secuencias durante el proceso de desarrollo del software? (Entrega: Respuesta)
 
+**Recursos**
+
+- Apuntes dado en clase
+- Recursos vistos en clase.
+- https://www.plantuml.com/plantuml/uml/
