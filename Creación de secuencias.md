@@ -15,7 +15,7 @@
 - Cuenta (Entidad que representa la cuenta bancaria asociada).
 
 ## Diagrama de Secuencias Básico
-- He buscado una manera de poder poner el código mucho más correcto en md, para que se entienda mejor a la hora de ver que hace cada cosa
+- He buscado una manera de poder poner el código mucho más correcto en md, para que se entienda mejor a la hora de ver que hace cada paso
 ```plantuml
 @startuml
 actor Usuario
