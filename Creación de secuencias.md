@@ -15,6 +15,7 @@ Tarjeta (Entidad que representa la tarjeta del usuario).
 Cuenta (Entidad que representa la cuenta bancaria asociada).
 
 ## Diagrama de Secuencias Básico
+- He buscado una manera de poder poner el código mucho más correcto en md, para que se entienda mejor a la hora de ver que hace cada cosa
 ```plantuml
 @startuml
 actor Usuario
@@ -61,5 +62,5 @@ end
 Interfaz_Cajero -> Usuario: Retirar Tarjeta
 @enduml
 ```
-He buscado una manera de poder poner el código mucho más correcto en md
+
 ![image](https://github.com/user-attachments/assets/67b1ef72-1468-424d-a2bc-f92aea133daa)
