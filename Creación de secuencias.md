@@ -65,6 +65,7 @@ Interfaz_Cajero -> Usuario: Retirar Tarjeta
 
 ![image](https://github.com/user-attachments/assets/67b1ef72-1468-424d-a2bc-f92aea133daa)
 
+## Diagrama de Secuencia Final
 ```plantuml
 @startuml
 actor Usuario
