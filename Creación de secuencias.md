@@ -64,7 +64,7 @@ Interfaz_Cajero -> Usuario: Retirar Tarjeta
 ```
 
 ![image](https://github.com/user-attachments/assets/67b1ef72-1468-424d-a2bc-f92aea133daa)
-## Clases de Análisis Estereotipadas
+## Clases de Diseño
 Las clases estereotipadas se dividen en tres tipos principales: Interfaces, Control, y Entidad. A partir de estas, se desarrollan las clases de diseño.
 
 **1. Interfaz_Cajero**
