@@ -16,7 +16,7 @@ El diagrama muestra el proceso completo de validación del usuario cuando insert
   
 **2. Verificación de la Tarjeta:**
 - Solicita validar la autenticidad de la tarjeta.
-  La tarjeta puede ser válida o inválida.
+- La tarjeta puede ser válida o inválida.
 - Si la tarjeta es inválida:
   - Termina el proceso.
 - Si la tarjeta es válida:
