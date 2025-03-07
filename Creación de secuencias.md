@@ -65,76 +65,72 @@ Interfaz_Cajero -> Usuario: Retirar Tarjeta
 
 ![image](https://github.com/user-attachments/assets/67b1ef72-1468-424d-a2bc-f92aea133daa)
 ## Clases de Diseño
-Las clases estereotipadas se dividen en tres tipos principales: Interfaces, Control, y Entidad. A partir de estas, se desarrollan las clases de diseño.
-
-**1. Interfaz_Cajero**
-Clase Estereotipada (Interfaz)
-- Representa la interacción con el usuario. En esta etapa, la clase "Interfaz_Cajero" muestra mensajes, solicita información y controla el flujo de interacción del usuario con el sistema.
-
-**Clases de Diseño:**
-- Atributos:
-    - mensajePantalla (String) – Muestra mensajes en la pantalla.
-    - intentosPIN (int) – Mantiene el contador de intentos para el PIN.
-- Métodos:
-    - mostrarMensaje(String mensaje): Muestra un mensaje al usuario en la pantalla.
-    - solicitarPIN(): Solicita al usuario que ingrese su PIN.
-    - mostrarMenu(): Muestra el menú de opciones del cajero.
-    - entregarDinero(double monto): Entrega el dinero al usuario.
-    - expulsarTarjeta(): Expulsa la tarjeta del cajero.
-
-**2. Control_Validacion**
-Clase Estereotipada (Control)
-- Esta clase gestiona la validación del usuario: verifica que la tarjeta insertada sea válida y compara el PIN ingresado con el PIN almacenado.
-
-**Clases de Diseño:**
-- Atributos:
-    - tarjeta (Tarjeta) – La tarjeta insertada por el usuario.
-    - intentosRestantes (int) – Límite de intentos para ingresar el PIN correctamente.
-- Métodos:
-    - validarTarjeta(): Verifica si la tarjeta es válida (activa).
-    - verificarPIN(String pinIngresado): Compara el PIN ingresado con el PIN almacenado.
-    - estaBloqueada(): Verifica si la tarjeta está bloqueada debido a intentos incorrectos de PIN.
-
-**3. Control_Transaccion**
-Clase Estereotipada (Control)
-- Esta clase gestiona las operaciones financieras como el retiro de dinero y la consulta de saldo.
-
-**Clases de Diseño:**
+**1. InterfazCajero (Interfaz)**
+- Descripción:
+    - Gestiona la interacción con el usuario a través de la pantalla del cajero automático. Se encarga de mostrar mensajes, solicitar el PIN, dar el menú de opciones y gestionar la entrega     de dinero y la expulsión de la tarjeta.
 
 - Atributos:
-    - cuenta (Cuenta) – La cuenta asociada a la tarjeta del usuario.
+    - Mensaje en pantalla
+    - Número de intentos del PIN
+
 - Métodos:
-    - verificarSaldo(double monto): Verifica si el saldo disponible es suficiente para realizar una transacción.
-    - realizarRetiro(double monto): Realiza el retiro de dinero de la cuenta si el saldo es suficiente.
-    - consultarSaldo(): Devuelve el saldo actual de la cuenta.
+    - Mostrar mensaje
+    - Solicitar PIN
+    - Mostrar menú de operaciones
+    - Mostrar errores
+    - Entregar dinero
+    - Expulsar tarjeta
 
-**4. Tarjeta**
-Clase Estereotipada (Entidad)
-- La clase "Tarjeta" es una entidad que contiene la información básica de la tarjeta del usuario, como el número y el PIN.
-
-**Clases de Diseño:**
+**2. ControlValidacion (Control)**
+- Descripción:
+    - Se encarga de gestionar la autenticación del usuario. Valida la tarjeta y el PIN, y controla los intentos permitidos antes de bloquear la tarjeta.
 
 - Atributos:
-    - numeroTarjeta (String) – Número de la tarjeta del usuario.
-    - pin (String) – El PIN asociado a la tarjeta.
-    - activa (boolean) – Estado de la tarjeta (si está activa o bloqueada).
+    - Tarjeta asociada
+    - Intentos restantes para el PIN
+
 - Métodos:
-    - getPIN(): Obtiene el PIN de la tarjeta.
-    - estaActiva(): Verifica si la tarjeta está activa.
-    - bloquear(): Bloquea la tarjeta si se ingresan demasiados PINs incorrectos.
+    - Validar tarjeta
+    - Verificar PIN
+    - Comprobar si la tarjeta está bloqueada
 
-**5. Cuenta**
-Clase Estereotipada (Entidad)
-- La clase "Cuenta" representa la cuenta bancaria asociada a una tarjeta y contiene el saldo disponible para realizar transacciones.
-
-**Clases de Diseño:**
+**3. ControlTransaccion (Control)**
+- Descripción:
+    - Gestiona las transacciones financieras del usuario, como consultar el saldo y realizar retiros.
 
 - Atributos:
-    - numeroCuenta (String) – El número de cuenta del usuario.
-    - saldo (double) – El saldo actual en la cuenta.
+    - Cuenta asociada
+
 - Métodos:
-    - getSaldo(): Retorna el saldo disponible en la cuenta.
-    - setSaldo(double saldo): Modifica el saldo de la cuenta después de una transacción (por ejemplo, después de un retiro).
+    - Verificar saldo disponible
+    - Realizar retiros
+    - Consultar saldo
+
+**4. Tarjeta (Entidad)**
+- Descripción:
+    - Representa la tarjeta del usuario, gestionando la autenticidad, el PIN y el estado (activa o bloqueada).
+
+- Atributos:
+    - Número de tarjeta
+    - PIN
+    - Estado (activa o bloqueada)
+
+- Métodos:
+    - Obtener el PIN
+    - Comprobar si está activa
+    - Bloquear tarjeta
+
+**5. Cuenta (Entidad)**
+- Descripción:
+    - Representa la cuenta bancaria asociada a la tarjeta del usuario y gestiona el saldo.
+
+- Atributos:
+    - Número de cuenta
+    - Saldo disponible
+
+- Métodos:
+    - Consultar saldo
+    - Modificar saldo (para retiros)
 
 ## Diagrama de Secuencia Final
 ```plantuml
