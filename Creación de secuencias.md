@@ -193,3 +193,4 @@ Interfaz_Cajero -> Usuario: Retirar Tarjeta
 
 - Ambos diagramas comparten muchas similitudes en su estructura y flujo, la diferencia es
 el nivel de detalle de la versión final ya que es más precisa aunque ya lo era la primera.
+- El aprendizaje para poder hacer los diagramas lo he obtenido de este video https://www.youtube.com/watch?v=xiQfSFxuuBw 
