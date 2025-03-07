@@ -14,7 +14,7 @@
 - Tarjeta (Entidad que representa la tarjeta del usuario).
 - Cuenta (Entidad que representa la cuenta bancaria asociada).
 
-## Diagrama de Secuencias Básico
+## Diseñar el diagrama de secuencias básico en base a las clases estereotipadas
 - He buscado una manera de poder poner el código mucho más correcto en md, para que se entienda mejor a la hora de ver que hace cada paso
 ```plantuml
 @startuml
@@ -64,7 +64,7 @@ Interfaz_Cajero -> Usuario: Retirar Tarjeta
 ```
 
 ![image](https://github.com/user-attachments/assets/67b1ef72-1468-424d-a2bc-f92aea133daa)
-## Clases de Diseño
+## Obtener las clases de diseño a partir de las clases de análisis estereotipadas
 **1. InterfazCajero (Interfaz)**
 - Descripción:
     - Gestiona la interacción con el usuario a través de la pantalla del cajero automático. Se encarga de mostrar mensajes, solicitar el PIN, dar el menú de opciones y gestionar la entrega     de dinero y la expulsión de la tarjeta.
@@ -132,7 +132,7 @@ Interfaz_Cajero -> Usuario: Retirar Tarjeta
     - Consultar saldo
     - Modificar saldo (para retiros)
 
-## Diagrama de Secuencia Final
+## Diseñar el diagrama de secuencia final
 ```plantuml
 @startuml
 actor Usuario
